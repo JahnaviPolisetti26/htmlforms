@@ -1,0 +1,94 @@
+* {
+  @import url("https://fonts.cdnfonts.com/css/google-sans");
+  font-family: "Product Sans Medium", sans-serif;
+}
+
+body {
+  background: #75f089;
+  background: linear-gradient(
+    90deg,
+    rgba(117, 240, 137, 1) 0%,
+    rgba(230, 216, 117, 1) 22%,
+    rgba(231, 139, 232, 1) 46%,
+    rgba(78, 177, 199, 1) 66%,
+    rgba(209, 123, 188, 1) 86%,
+    rgba(196, 81, 82, 1) 100%
+  );
+}
+
+form {
+  width: 600px;
+}
+
+fieldset {
+  border: 3px solid blue;
+  border-radius: 15px;
+}
+
+legend {
+  color: red;
+}
+
+input:required {
+  border: 3px solid rgb(243, 38, 188);
+}
+
+input[type="radio"]:checked {
+  height: 17px;
+  width: 17px;
+}
+
+input[type="radio"]:checked + label {
+  color: yellow;
+}
+
+input[type="submit"] {
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
+input[type="reset"] {
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+select {
+  background-color: pink;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: lightcoral;
+}
+
+input[type="text"] + span {
+  display: none;
+}
+
+input[type="text"]:hover + span {
+  display: inline;
+}
+
+input[type="tel"] + span {
+  display: none;
+}
+
+input[type="tel"]:hover + span {
+  display: inline;
+}
+img {
+  display: none;
+}
+
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
